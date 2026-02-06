@@ -1,26 +1,12 @@
 {
+    "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Program",
-            "type": "node",
+            "name": "Launch Chrome",
             "request": "launch",
-            "program": "${workspaceFolder}/dist/index.js",
-            "preLaunchTask": "npm: build",
-            "outFiles": [
-                "${workspaceFolder}/dist/**/*.js"
-            ],
-            "skipFiles": [
-                "<node_internals>/**"
-            ]
-        },
-        {
-            "name": "Attach",
-            "port": 9229,
-            "request": "attach",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "type": "node"
+            "type": "pwa-chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/src"
         }
     ]
 }
